@@ -107,3 +107,7 @@ O modelo final atingiu métricas sólidas para a concessão de crédito:
     Abra o arquivo `risk_engine_xgboost.ipynb`.
 
 ---
+
+## Créditos e Referência
+
+**All Lending Club loan data**[All Lending Club loan dataset](https://www.kaggle.com/datasets/wordsforthewise/lending-club/data)
