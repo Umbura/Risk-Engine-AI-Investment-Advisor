@@ -17,7 +17,7 @@
 <!-- MAIN IMAGE -->
 <img src="https://raw.githubusercontent.com/Umbura/Risk-Engine-AI-Investment-Advisor/refs/heads/main/assets/classification_report.png" alt="Classification Report" width="100%">
 
-### 📊 Classification Report
+### Classification Report
 
 | Classe | Precision | Recall | F1-Score | Suporte |
 | :--- | :---: | :---: | :---: | :---: |
