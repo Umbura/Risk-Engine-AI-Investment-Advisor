@@ -17,17 +17,17 @@
 <!-- MAIN IMAGE -->
 <img src="https://raw.githubusercontent.com/Umbura/Risk-Engine-AI-Investment-Advisor/refs/heads/main/assets/classification_report.png" alt="Classification Report" width="100%">
 
-*(--- Relatório de Classificação ---
-              precision    recall  f1-score   support
+### 📊 Classification Report
 
-        Pago       0.89      0.66      0.76     20167
-Inadimplente       0.33      0.67      0.44      5006
+| Classe | Precision | Recall | F1-Score | Suporte |
+| :--- | :---: | :---: | :---: | :---: |
+|  **Paid** | 0.89 | 0.66 | 0.76 | 20.167 |
+|  **delinquent** | 0.33 | **0.67** | 0.44 | 5.006 |
+|  **weighted average** | 0.78 | 0.66 | 0.70 | 25.173 |
 
-    accuracy                           0.66     25173
-   macro avg       0.61      0.67      0.60     25173
-weighted avg       0.78      0.66      0.70     25173
-
-AUC-ROC Final (Teste): 0.7256)*
+<p>
+  <strong> AUC-ROC: <code>0.7256</code></strong>
+</p>
 
 </div>
 
