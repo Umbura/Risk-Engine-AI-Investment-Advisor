@@ -91,6 +91,6 @@ O modelo final atingiu métricas sólidas para a concessão de crédito:
     pip install -r requirements.txt
     ```
 3.  **Execute o Notebook:**
-    Abra o arquivo `risk_engine_xgboost.ipynb` (recomendado usar Google Colab ou Jupyter Lab).
+    Abra o arquivo `risk_engine_xgboost.ipynb`.
 
 ---
