@@ -104,7 +104,7 @@ O modelo final atingiu métricas sólidas para a concessão de crédito:
     pip install -r requirements.txt
     ```
 3. **Extraia o dataset:**
-   Extraia o arquivo lending_club_loans_processed.rar
+   Extraia o dataset processado `arquivo lending_club_loans_processed.rar`.
     
 4.  **Execute o Notebook:**
     Abra o arquivo `risk_engine_xgboost.ipynb`.
