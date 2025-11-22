@@ -12,7 +12,6 @@ A abordagem combina um motor de Machine Learning para estimar probabilidade de r
 A solução integra engenharia de dados, modelagem preditiva, definição de políticas de crédito e geração de recomendações acionáveis para o usuário final.
 
 > *Nota do Autor: Sem sombra de duvidas, Nemesis foi o projeto mais dificil que fiz até então. Tive de aplicar meu conhecimento tanto em SQL quanto em Python, e mesmo assim obtive um resultado que considero mediocre.
-> 
 > Irei discorrer mais sobre isso no decorrer deste documento.
 
 ---
