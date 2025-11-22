@@ -5,16 +5,22 @@
 ![Status](https://img.shields.io/badge/status-AUC_ROC_Score_0.72-green)
 
 ## Sobre
-Este projeto apresenta uma solução *end-to-end* para o mercado financeiro, desenvolvida com foco no ecossistema de uma corretora internacional.
+O projeto Nemesis apresenta uma solução completa para avaliação de risco de crédito e recomendação de investimentos, alinhada ao contexto operacional de uma corretora internacional. 
 
-A solução vai além da classificação binária tradicional (Paga/Não Paga). Ela integra um **Engine de Machine Learning** robusto para cálculo de probabilidade de *default* com um **Agente de Inteligência Artificial Generativa** que atua como um assessor financeiro, recomendando produtos de investimento personalizados com base no perfil de risco calculado.
+A abordagem combina um motor de Machine Learning para estimar probabilidade de risco de inadimplência com um agente de IA Gen capaz de produzir recomendações personalizadas com base no perfil de risco do cliente.
+
+A solução integra engenharia de dados, modelagem preditiva, definição de políticas de crédito e geração de recomendações acionáveis para o usuário final.
+
+> *Nota do Autor: Sem sombra de duvidas, Nemesis foi o projeto mais dificil que fiz até então. Tive de aplicar meu conhecimento tanto em SQL quanto em Python, e mesmo assim obtive um resultado que considero mediocre.
+> 
+> Irei discorrer mais sobre isso no decorrer deste documento.
 
 ---
 
 ## O Desafio e os Dados
 
 ### Seleção do Dataset
-Utilizamos o dataset histórico do **Lending Club** (Empréstimos P2P), amplamente reconhecido na indústria de crédito por conter dados reais de comportamento financeiro, incluindo renda, DTI (*Debt-to-Income*), histórico de crédito e status de pagamento.
+Utilizamos o dataset histórico do **Lending Club** (Empréstimos P2P), amplamente reconhecido na indústria de crédito por conter 10 anos de dados reais de comportamento financeiro, incluindo renda, DTI (*Debt-to-Income*), histórico de crédito e status de pagamento.
 
 ### Pré-processamento de Dados (Data Cleaning)
 Para garantir a robustez do modelo, o pipeline de dados incluiu:
@@ -24,9 +30,13 @@ Para garantir a robustez do modelo, o pipeline de dados incluiu:
 
 ### Engenharia de Atributos (Feature Engineering)
 O diferencial de performance do modelo veio da criação de variáveis financeiras sintéticas que capturam a saúde do cliente melhor que os dados brutos:
-*   `loan_to_income_ratio`: O peso do empréstimo sobre a renda anual.
-*   `credit_history_length`: Tempo de exposição ao mercado de crédito.
+*   `loan_to_income_ratio`: proporção do valor do empréstimo em relação à renda.
+*   `credit_history_length`: tempo de histórico de crédito ativo.
 *   `acc_open_rate`: Velocidade de abertura de novas contas (sinal de busca desesperada por crédito).
+
+> *Nota do Autor: Optei por utilizar o GCP, pois queria aprender a usar o BigQuery, até então a minha experiencia com SQL tinha sido com sqlserver e postgres. Foi satisfatorio me deparar com uma interface maravilhosa de se trabalhar.
+>
+> Porém começaram os problemas
 
 ---
 
