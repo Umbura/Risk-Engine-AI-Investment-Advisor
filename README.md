@@ -11,8 +11,8 @@ A abordagem combina um motor de Machine Learning para estimar probabilidade de r
 
 A solução integra engenharia de dados, modelagem preditiva, definição de políticas de crédito e geração de recomendações acionáveis para o usuário final.
 
-> *Nota do Autor: Sem sombra de duvidas, Nemesis foi o projeto mais dificil que fiz até então. Tive de aplicar meu conhecimento tanto em SQL quanto em Python, e mesmo assim obtive um resultado que considero mediocre.
-> Irei discorrer mais sobre isso no decorrer deste documento.
+> *Nota: Sem sombra de dúvidas, Nemesis foi o projeto mais difícil que desenvolvi até então. Precisei aplicar meus conhecimentos tanto em SQL quanto em Python, e mesmo assim obtive um resultado que considero mediano.*
+> *Aprendi bastante, mas ao mesmo tempo senti frustração devido às limitações técnicas. Irei detalhar mais sobre isso ao longo deste documento.*
 
 ---
 
@@ -33,9 +33,9 @@ O diferencial de performance do modelo veio da criação de variáveis financeir
 *   `credit_history_length`: tempo de histórico de crédito ativo.
 *   `acc_open_rate`: Velocidade de abertura de novas contas (sinal de busca desesperada por crédito).
 
-> *Nota do Autor: Optei por utilizar o GCP, pois queria aprender a usar o BigQuery, até então a minha experiencia com SQL tinha sido com sqlserver e postgres. Foi satisfatorio me deparar com uma interface maravilhosa de se trabalhar.
+> *Nota: Optei por utilizar o GCP porque queria aprender a trabalhar com o BigQuery. Até então, minha experiência com SQL se limitava a SQL Server e Postgres.*
 >
-> Porém começaram os problemas
+> *Tive alguns problemas inicialmente, principalmente pelo fato de o dataset ser muito grande. Havia muitos dados a serem processados, e minhas primeiras tentativas de fazer o upload falharam. Foi então que decidi cruzar apenas os dados essenciais na etapa de processamento, o que não só aumentou o score final como também reduziu significativamente o tamanho do dataset, tornando-o mais fácil de manipular.*
 
 ---
 
@@ -50,11 +50,13 @@ Durante o desenvolvimento, testamos diferentes abordagens para maximizar a métr
     *   **Motivo:** Melhor generalização em dados tabulares, tratamento nativo de valores nulos e velocidade de treino (`tree_method='hist'`).
     *   **Otimização:** Utilizamos `RandomizedSearchCV` com validação cruzada (3-fold) para tunar hiperparâmetros críticos como `learning_rate`, `max_depth` e `scale_pos_weight` (para lidar com o desbalanceamento de classes).
 
+> *Nota: Também foi testado o método de Stacking, mas ele se mostrou inferior ao XGBoost e apresentou indícios de overfitting.*
+
 ---
 
 ## Regra de Negócio e Segmentação
 
-O modelo matemático entrega uma probabilidade (0 a 100%). Para tornar isso acionável para o negócio (Avenue), desenvolvemos uma régua de decisão baseada em apetite de risco:
+O modelo matemático entrega uma probabilidade (0 a 100%). Para tornar isso acionável para o negócio, desenvolvemos uma régua de decisão baseada em apetite de risco:
 
 | Faixa de Probabilidade | Classificação | Segmento | Ação Recomendada (Política de Crédito) |
 | :--- | :--- | :--- | :--- |
@@ -72,7 +74,7 @@ Para operacionalizar a decisão, integrei um módulo de **IA Generativa** (simul
 *   **Persona:** Atua como um Assessor Sênior de Investimentos.
 *   **Output:** Gera um pitch comercial personalizado, explicando ao cliente o porquê da decisão e sugerindo os produtos da matriz de recomendação acima.
 
-> *Nota: No notebook, o agente opera com uma lógica de fallback para garantir a execução sem necessidade de chaves de API ativas.*
+> *Nota: Devido a limitações técnicas, não consegui aplicar um agente real, então tive de simulá-lo. No notebook, o agente opera com uma lógica de fallback para garantir a execução sem necessidade de chaves de API ativas..*
 
 ---
 
@@ -80,11 +82,14 @@ Para operacionalizar a decisão, integrei um módulo de **IA Generativa** (simul
 
 O modelo final atingiu métricas sólidas para a concessão de crédito:
 
-*   **AUC-ROC:** **0.7256** (Excelente capacidade de ordenação de risco).
-*   **Recall (Inadimplentes):** **67%** (O modelo identifica 2 em cada 3 possíveis calotes, protegendo o caixa da empresa).
+*   **AUC-ROC:** **0.7256** indica boa capacidade de ordenação de risco.
+*   **Recall (Inadimplentes):** **67%** significa que o modelo identifica 2 em cada 3 possíveis calotes, protegendo o caixa da empresa.
 *   **Impacto:** A segmentação isolou os **6% melhores clientes** para estratégias de retenção agressiva, enquanto protege a exposição da empresa nos 60% da base de maior risco.
 
 ---
+
+## Considerações Finais
+*Pelo que estudei, modelos de risco são mais difíceis de alcançar scores altos do que os modelos habituais, justamente devido à complexidade das operações financeiras. Minha meta era alcançar um score de 0,80, mas infelizmente não foi possível. No futuro, pretendo relançar este modelo tentando atingir essa meta.*
 
 ---
 
