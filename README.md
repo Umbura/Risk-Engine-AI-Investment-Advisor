@@ -93,7 +93,7 @@ O modelo final atingiu métricas sólidas para a concessão de crédito:
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 1.  **Clone o repositório:**
     ```bash
