@@ -77,3 +77,20 @@ O modelo final atingiu métricas sólidas para a concessão de crédito:
 *   **Impacto:** A segmentação isolou os **6% melhores clientes** para estratégias de retenção agressiva, enquanto protege a exposição da empresa nos 60% da base de maior risco.
 
 ---
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/umbura/Risk-Engine-AI-Investment-Advisor.git
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Execute o Notebook:**
+    Abra o arquivo `risk_engine_xgboost.ipynb` (recomendado usar Google Colab ou Jupyter Lab).
+
+---
