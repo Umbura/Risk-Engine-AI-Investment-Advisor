@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-green)
-![Status](https://img.shields.io/badge/status-AUC-ROC_Score_0.72-green)
+![Status](https://img.shields.io/badge/status-AUCROC_Score_0.72-green)
 
 ## Sobre
 Este projeto apresenta uma solução *end-to-end* para o mercado financeiro, desenvolvida com foco no ecossistema de uma corretora internacional.
