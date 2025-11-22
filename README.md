@@ -1,4 +1,4 @@
-# 🏦 Risk Engine & Assessor de Investimentos com IA
+# 🏦 Risk Engine & Assessor de Investimentos com IA(Project Nemesis)
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-green)
