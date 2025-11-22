@@ -110,4 +110,10 @@ O modelo final atingiu métricas sólidas para a concessão de crédito:
 
 ## Créditos e Referência
 
-**All Lending Club loan data**[All Lending Club loan dataset](https://www.kaggle.com/datasets/wordsforthewise/lending-club/data)
+**All Lending Club loan data**.[All Lending Club Loan Dataset](https://www.kaggle.com/datasets/wordsforthewise/lending-club/data)
+
+---
+
+## Licença
+
+Distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
