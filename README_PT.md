@@ -1,8 +1,37 @@
-# Risk Engine & Assessor de Investimentos com IA(Project Nemesis)
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![XGBoost](https://img.shields.io/badge/Model-XGBoost-green)
-![Status](https://img.shields.io/badge/status-AUC_ROC_Score_0.72-green)
+# Risk Engine & AI Investment Advisor
+
+### Projeto Nemesis
+
+<!-- LANGUAGE SWITCHER -->
+[![Read in English](https://img.shields.io/badge/Read%20in-English-2ea44f?style=for-the-badge&logo=google-translate&logoColor=white)](README.md)
+
+<!-- TECH STACK BADGES -->
+<p>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/Model-XGBoost-green" alt="XGBoost">
+  <img src="https://img.shields.io/badge/status-AUC_ROC_Score_0.72-green" alt="Status AUC">
+</p>
+
+<!-- MAIN IMAGE -->
+<img src="https://raw.githubusercontent.com/Umbura/Risk-Engine-AI-Investment-Advisor/refs/heads/main/assets/classification_report.png" alt="Classification Report" width="100%">
+
+### Relátorio de Classificação
+
+| Classe | Precision | Recall | F1-Score | Suporte |
+| :--- | :---: | :---: | :---: | :---: |
+| 🟢 **Pago** | 0.89 | 0.66 | 0.76 | 20.167 |
+| 🔴 **Inadimplente** | 0.33 | **0.67** | 0.44 | 5.006 |
+| ⚖️ **Média Ponderada** | 0.78 | 0.66 | 0.70 | 25.173 |
+
+<p>
+  <strong>🏆 AUC-ROC Final (Teste): <code>0.7256</code></strong>
+</p>
+
+</div>
+
+---
 
 ## Sobre
 O projeto Nemesis apresenta uma solução completa para avaliação de risco de crédito e recomendação de investimentos, alinhada ao contexto operacional de uma corretora internacional. 
