@@ -16,6 +16,7 @@
 
 <!-- MAIN IMAGE -->
 <img src="assets/https://raw.githubusercontent.com/Umbura/Risk-Engine-AI-Investment-Advisor/refs/heads/main/assets/classification_report.png" alt="App Flowchart" width="100%">
+
 *(--- Relatório de Classificação ---
               precision    recall  f1-score   support
 
