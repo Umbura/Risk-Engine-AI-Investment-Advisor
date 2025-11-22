@@ -15,9 +15,18 @@
 </p>
 
 <!-- MAIN IMAGE -->
-<img src="assets/fluxograma_do_app.png" alt="App Flowchart" width="100%">
+<img src="assets/https://raw.githubusercontent.com/Umbura/Risk-Engine-AI-Investment-Advisor/refs/heads/main/assets/classification_report.png" alt="App Flowchart" width="100%">
+*(--- Relatório de Classificação ---
+              precision    recall  f1-score   support
 
-*()*
+        Pago       0.89      0.66      0.76     20167
+Inadimplente       0.33      0.67      0.44      5006
+
+    accuracy                           0.66     25173
+   macro avg       0.61      0.67      0.60     25173
+weighted avg       0.78      0.66      0.70     25173
+
+AUC-ROC Final (Teste): 0.7256)*
 
 </div>
 
