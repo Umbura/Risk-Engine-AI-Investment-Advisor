@@ -1,8 +1,6 @@
 <div align="center">
 
-# Risk Engine & AI Investment Advisor
-
-### Project Nemesis
+## Risk Engine & AI Investment Advisor
 
 <!-- LANGUAGE SWITCHER -->
 [![Read in Portuguese](https://img.shields.io/badge/Read%20in-Portuguese-2ea44f?style=for-the-badge&logo=google-translate&logoColor=white)](README_PT.md)
@@ -34,13 +32,13 @@
 ---
 
 ## About
-Project Nemesis presents a complete solution for credit risk assessment and investment recommendation, aligned with the operational context of an international brokerage.
+The project presents a complete solution for credit risk assessment and investment recommendation, aligned with the operational context of an international brokerage.
 
 The approach combines a Machine Learning engine to estimate default risk probability with a Generative AI agent capable of producing personalized recommendations based on the client's risk profile.
 
 The solution integrates data engineering, predictive modeling, credit policy definition, and actionable recommendation generation for the end user.
 
-> *Note: Without a doubt, Nemesis was the most difficult project I have developed so far. I had to apply my knowledge in both SQL and Python, and even then, I obtained a result that I consider average.*
+> *Note: Without a doubt, this project was the most difficult project I have developed so far. I had to apply my knowledge in both SQL and Python, and even then, I obtained a result that I consider average.*
 > *I learned a lot, but at the same time felt frustration due to technical limitations. I will detail more about this throughout this document.*
 
 ---
