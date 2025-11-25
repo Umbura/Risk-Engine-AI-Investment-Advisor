@@ -13,7 +13,7 @@
 </p>
 
 <!-- MAIN IMAGE -->
-<img src="https://raw.githubusercontent.com/Umbura/Risk-Engine-AI-Investment-Advisor/refs/heads/main/assets/classification_report.png" alt="Classification Report" width="100%">
+<img src="https://i.imgur.com/7GuveeC.png" alt="Classification Report" width="100%">
 
 ### Classification Report
 
